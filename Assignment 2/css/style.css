@@ -1,0 +1,272 @@
+/* Reset default margin and padding for better layout */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+/* styling nav bar */
+nav{
+    background-color: #000;
+    display: flex;
+    justify-content: right;
+}
+.nav img {
+    max-height: 90px; /* Set the maximum height for the logo */
+  }
+ul{
+    list-style: none;
+    display: inline;
+}
+ul li {
+    display: inline-block;
+    padding: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    background-color: #dfa167;
+}
+
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+body{
+    background-color: #dfa167;
+}
+  /* Flexbox layout for section */
+  section {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+  }
+  
+  /* Styling for the image */
+  .img {
+    flex: 2;
+  }
+  
+  .img img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    display: block; /* Remove any default spacing */
+  }
+  
+  /* Styling for the content */
+  .content {
+    flex: 1; /* Take up 50% of the available space */
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 10px; /* Add some space below the heading */
+    font-size: 60px; 
+  }
+  
+  .content p{
+    font-size: 20px;
+}
+
+  /* Styling the button */
+  button {
+    background-color: yellow;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button a{
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling the footer */
+  footer{
+    background-color: #000;
+    color: #dfa167;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    
+  }
+
+  /* ******************************************************************************************* */
+
+  /* Styling for the order page */
+
+  /* Reset default margin and padding for better layout */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting font-family */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Styling the form container */
+form.delivery {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the pizza details section */
+.pizza-form {
+  margin-bottom: 20px;
+}
+
+.pizza-form p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pizza-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pizza-form input[type="radio"],
+.pizza-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Styling the customer information section */
+.name-input div {
+  margin-bottom: 10px;
+}
+
+.name-input label {
+  display: inline-block;
+  width: 120px;
+}
+
+.name-input input[type="text"],
+.name-input input[type="email"],
+.name-input input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.name-input input[type="text"]:focus,
+.name-input input[type="email"]:focus,
+.name-input input[type="tel"]:focus {
+  border-color: #007bff;
+}
+
+/* Styling the location and payment selection */
+.location,
+.payment {
+  margin-bottom: 20px;
+}
+
+.location label,
+.payment label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.location select,
+.payment select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.location select:focus,
+.payment select:focus {
+  border-color: #007bff;
+}
+
+/* Style the form submission buttons */
+.buttons {
+  text-align: center;
+}
+
+.buttons input[type="submit"],
+.buttons input[type="reset"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buttons input[type="reset"] {
+  background-color: #ff0000;
+}
+
+.buttons input[type="submit"]:hover,
+.buttons input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style the informational messages */
+.info-form {
+  font-size: 12px;
+  color: #666;
+}
+
+#info-form-bottom {
+  margin-bottom: 20px;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+   
+    nav {
+      justify-content: center; /* Center the items in the navigation bar */
+  }
+
+  /* Modify the font size of the navigation items for smaller screens */
+  ul li {
+      font-size: 16px;
+  }
+
+  /* Adjust the padding of the content section for smaller screens */
+  .content {
+      padding: 10px;
+  }
+
+  /* Modify the font size of the heading for smaller screens */
+  h1 {
+      font-size: 40px;
+  }
+
+  /* Adjust the font size of the paragraph content for smaller screens */
+  .content p {
+      font-size: 16px;
+  }
+
+  /* Modify the button padding for smaller screens */
+  button {
+      padding: 8px 16px;
+  }
+
+  /* Modify the footer styles for smaller screens */
+  footer {
+      flex-direction: column; /* Stack the items vertically */
+      align-items: center; /* Center the items horizontally */
+  }
+
+}
